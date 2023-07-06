@@ -139,14 +139,26 @@ class L():
 class M():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        j=6
+        print('MMMM          MMMM')
+        for i in range(6):
+            if i<=3: 
+                print('MMM'+" "*i+'MMM'+" "*j+'MMM'+" "*i+'MMM')
+                j-=2
+            else:
+                print('MMM            MMM')
+#M.pattern()
 
 class N():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        j=8
+        print('NNNN          NNN')
+        for i in range(5):
+            print('NNN'+' '*i*2+'NNN'+' '*j+'NNN')
+            j-=2
+        print('NNN          NNNN')
+#N.pattern()
 
 class O():
     @staticmethod
