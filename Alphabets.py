@@ -13,7 +13,6 @@ class A():
                 print(" "*j+letter*3+" "*(k*2)+letter*3)
             j-=1
             k+=1
-
 #A.pattern()
 
 class B():
@@ -25,7 +24,6 @@ class B():
                 print(letter*9)
             else:
                 print(letter*3 + " "*6+letter)
-
 #B.pattern()
 
 class C():
@@ -37,7 +35,6 @@ class C():
         print('CCC')
         for i in l[::-1]:
             print(i)    
-
 #C.pattern()
 
 class D():
@@ -49,7 +46,6 @@ class D():
         print('DDD       DD')
         for i in l[::-1]:
             print(i)
-    
 #D.pattern()
 
 class E():
@@ -116,7 +112,6 @@ class J():
         print('        JJJ      ')
         print(' JJJ    JJ      ')
         print('   JJJJJ      ')
-
 #J.pattern()
 
 class K():
@@ -124,8 +119,6 @@ class K():
     def pattern():
         for i in range(3,-4,-1):
             print('K'*3+" "*(abs(i)*2)+'KK')
-
-        
 #K.pattern()
 
 class L():
@@ -163,45 +156,78 @@ class N():
 class O():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        l=['     OOOOOOO','  OOO       OOO','OOO           OOO']
+        for i in l:
+            print(i)
+        print('OOO           OOO')
+        for i in l[::-1]:
+            print(i)
+#O.pattern()
 
 class P():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
-
+        letter='P'
+        for i in range(4):
+            if i%3==0:
+                print(letter*9)
+            else:
+                print(letter*3 + " "*6+letter)
+        for i in range(3):
+            print("PPP")
+#P.pattern()
 
 class Q():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
-
+        l=['     QQQQQQQ','  QQQ       QQQ','QQQ           QQQ','QQQ           QQQ']
+        for i in l:
+            print(i)
+        l2=['     QQQQQQQ   QQ','  QQQ        QQ','QQQ        QQ QQQ']
+        for i in l2[::-1]:
+            print(i)
+#Q.pattern()
 
 class R():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        letter='R'
+        for i in range(4):
+            if i%3==0:
+                print(letter*9)
+            else:
+                print(letter*3 + " "*6+letter)
+        for i in range(-1,-4,-1):
+            print('R'*3+" "*(abs(i)*2)+'RR')
+#R.pattern()
 
 class S():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        l=['   SSSSSS',' SSS     SS','  SSS','    SSSS','       SSS',' SS     SSS','   SSSSSS']
+        for i in l:
+            print(i)
+#S.pattern()
 
 class T():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        for i in range(7):
+            if i==0:
+                print('TTTTTTTTTTTTTTT')
+            else:
+                print('      TTT      ')
+#T.pattern()
+
 class U():
     @staticmethod
     def pattern():
-        pass
-#.pattern()
+        l=['    UUUUUUUUU','  UU         UU','UUU           UUU']
+        for _ in range(4):
+            print(l[-1])
+        for i in l[::-1]:
+            print(i)
+#U.pattern()
 
 class V():
     @staticmethod
